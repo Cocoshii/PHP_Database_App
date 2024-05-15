@@ -1,0 +1,17 @@
+/* Re-engineering reference: https://stackoverflow.com/questions/15300234/how-can-i-horizontally-center-a-button-element-in-a-div-element <- CITE */
+
+/* Class for centering text */
+.centerText {
+    display:block;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    width: 60px;
+}

@@ -1,0 +1,39 @@
+<!-- Display database actions here on successful login, as verified in login.php -->
+
+<!-- Required functionalities:
+>> Search database entries
+>> Update database entries
+>> Delete database entries (delete a student from the database)
+>> Calculate student final grade (based on student ID and course grades. Student ID and course code entered by the user)
+>> Logout (ends user session, exits program, and logs them out, redirecting them to a logout successful page. Offers a button to log back in.)-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CP476 Student Course Database</title>
+    <link rel="stylesheet" href="html_classes.css"> <!-- Link to CSS file -->
+</head>
+
+<body>
+    
+<div class="page-container">
+    <!-- Welcome heading -->
+    <div class="welcome-heading">
+        <h1>Welcome to the CP476 Student Course Database. Please select an action:</h1>
+    </div>
+    
+    <!-- <form action="http://localhost/handleLogin.php" method="POST">  -->
+    <form class="form-container" method="POST">
+        <button type="button" class="menu-button search" onclick="location.href = 'search_NameTable.php';">Search data entries</button>
+        <button type="button" class="menu-button update" onclick="location.href = 'update_db.php';">Update data entries</button>
+        <button type="button" class="menu-button delete" onclick="location.href = 'delete_db.php';">Delete data entries</button>
+        <button type="button" class="menu-button calculate" onclick="location.href = 'calc_final_grade.php';">Calculate student final grade</button>
+        <button type="button" class="menu-button logout" onclick="location.href = 'logout.php';">Logout</button>
+    </form>
+</div>
+    
+</body>
+</html>
